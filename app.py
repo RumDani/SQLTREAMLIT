@@ -6,12 +6,18 @@ import os
 import json
 import toml
 
+import streamlit as st
+import toml
+
 # Konfiguráció beolvasása .toml fájlból
-config = toml.load('config.toml')
+config = toml.load('secret.toml')
 GOOGLE_CLIENT_ID = config['google']['client_id']
 GOOGLE_CLIENT_SECRET = config['google']['client_secret']
 REDIRECT_URI = config['google']['redirect_uri']
 GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
+
+# A Streamlit alkalmazás további részei
+# Itt használhatod a beolvasott konfigurációs adatokat.
 
 # Adatbázis kapcsolat létrehozása
 conn = sqlite3.connect('emails.db')
