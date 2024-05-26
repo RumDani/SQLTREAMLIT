@@ -12,14 +12,14 @@ import streamlit as st
 # Konfiguráció beolvasása .toml fájlból
 
 ###
-#client_id = st.secrets["client_id"]
-#client_secret = st.secrets["client_secret"]
-#redirect_url = st.secrets["redirect_url"]
+client_id = st.secrets["client_id"]
+client_secret = st.secrets["client_secret"]
+redirect_url = st.secrets["redirect_url"]
 ###
 
-GOOGLE_CLIENT_ID = st.secrets["client_id"]
-GOOGLE_CLIENT_SECRET = st.secrets["client_secret"]
-REDIRECT_URI =  st.secrets["redirect_url"]
+#GOOGLE_CLIENT_ID = st.secrets["client_id"]
+#GOOGLE_CLIENT_SECRET = st.secrets["client_secret"]
+#REDIRECT_URI =  st.secrets["redirect_url"]
 GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
 
 # A Streamlit alkalmazás további részei
