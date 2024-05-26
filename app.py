@@ -17,9 +17,9 @@ client_secret = st.secrets["client_secret"]
 redirect_url = st.secrets["redirect_url"]
 ###
 
-#GOOGLE_CLIENT_ID = st.secrets["client_id"]
-#GOOGLE_CLIENT_SECRET = st.secrets["client_secret"]
-#REDIRECT_URI =  st.secrets["redirect_url"]
+#GOOGLE_CLIENT_ID = st.secrets[google]["client_id"]
+#GOOGLE_CLIENT_SECRET = st.secrets[google]["client_secret"]
+#REDIRECT_URI =  st.secrets[google]["redirect_url"]
 GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
 
 # A Streamlit alkalmazás további részei
