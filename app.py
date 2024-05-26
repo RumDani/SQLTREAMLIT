@@ -4,16 +4,22 @@ import requests
 from oauthlib.oauth2 import WebApplicationClient
 import os
 import json
-import toml
+#import toml
 
 import streamlit as st
-import toml
+#import toml
 
 # Konfiguráció beolvasása .toml fájlból
-config = toml.load('secret.toml')
-GOOGLE_CLIENT_ID = config['google']['client_id']
-GOOGLE_CLIENT_SECRET = config['google']['client_secret']
-REDIRECT_URI = config['google']['redirect_uri']
+
+###
+#client_id = st.secrets["client_id"]
+#client_secret = st.secrets["client_secret"]
+#redirect_url = st.secrets["redirect_url"]
+###
+
+GOOGLE_CLIENT_ID = st.secrets["client_id"]
+GOOGLE_CLIENT_SECRET = st.secrets["client_secret"]
+REDIRECT_URI =  st.secrets["redirect_url"]
 GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
 
 # A Streamlit alkalmazás további részei
